@@ -1,0 +1,46 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 47,
+    "spacing": 0,
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["image#pokemon"],
+    "modules-right": ["clock", "backlight", "cpu", "memory"],
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "tooltip-format": "{:%Y-%m-%d %H:%M:%S}"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent} {icon}",
+        "format-icons": {
+            "0": "󰌍",
+            "1": "󰌍",
+            "2": "󰌍",
+            "3": "󰌍",
+            "4": "󰌍",
+            "5": "󰌍",
+            "6": "󰌍",
+            "7": "󰌍",
+            "8": "󰌍",
+            "9": "󰌍"
+        }
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+    "cpu": {
+        "format": "CPU: {usage}%",
+        "interval": 2
+    },
+    "memory": {
+        "format": "RAM: {}%"
+    },
+    "image#pokemon": {
+           "path": "/tmp/current_pokemon.png",
+           "size": 30,
+           "interval": 60,
+           "on-click": "exec ~/.config/waybar/scripts/refresh_pokemon.sh && killall -USR2 waybar"
+    }
+}

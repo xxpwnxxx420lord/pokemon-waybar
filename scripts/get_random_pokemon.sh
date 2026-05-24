@@ -1,4 +1,5 @@
-DIR="~/./.local/share/pokemon-icat/pokemon-icons/shiny"
+#!/bin/bash
+DIR="$HOME/.local/share/pokemon-icat/pokemon-icons/shiny"
 
 # Check if the directory exists
 if [ -d "$DIR" ]; then
@@ -6,8 +7,14 @@ if [ -d "$DIR" ]; then
     # Using 'find' to get files and 'shuf' to randomize
     FILE=$(find "$DIR" -maxdepth 1 -name "*.png" | shuf -n 1)
 
-    # Output the path of the file
-    echo "$FILE"
+    if [ -n "$FILE" ]; then
+        # Output the path of the file
+        echo "$FILE"
+    else
+        echo "Error: no PNG files found in $DIR" >&2
+        exit 1
+    fi
 else
-    echo "Error: Directory $DIR does not exist."
+    echo "Error: Directory $DIR does not exist." >&2
     exit 1
+fi

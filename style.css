@@ -1,0 +1,55 @@
+* {
+    font-family: "inter", sans-serif;
+    font-size: 12px;
+}
+
+#waybar {
+    background-color: transparent;
+    color: rgba(255,255,255, 1);
+    border-radius: 3px;
+}
+
+#backlight {
+    background-color: #EF6F6C;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 5px 5px
+}
+
+#cpu {
+    background-color: #465775;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 5px 5px
+}
+
+#clock {
+    background-color: #56E39F;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 5px 5px
+}
+
+#memory {
+    background-color: #FCAF58;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 5px 5px
+}
+
+#workspaces {
+    background-color: #59C9A5;
+    color: #ffffff;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin: 5px 5px
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: white;
+}

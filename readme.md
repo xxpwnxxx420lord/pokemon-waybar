@@ -17,3 +17,5 @@ A simple minimalistic pokemon themed (look in the middle :3) waybar config which
 - CPU usage
 - Memory usage
 - Workspaces
+
+This is my first ever waybar project so dont hate :sob:
